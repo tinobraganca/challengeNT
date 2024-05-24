@@ -65,13 +65,21 @@ Obs: Local a publicação das mensagem no SQS não está acontecendo porque cred
     
 Projeto está rodando na AWS
 
+Jaeger: http://ec2-3-230-167-213.compute-1.amazonaws.com:16686
+
 Grafana: http://ec2-3-230-167-213.compute-1.amazonaws.com:3000 login/senha=admin 
 
-Hotel-service: http://ec2-3-230-167-213.compute-1.amazonaws.com:8083/swagger-ui/index.html
+Hotel-service: 
+- http://ec2-3-230-167-213.compute-1.amazonaws.com:8083/swagger-ui/index.html
+- http://ec2-3-230-167-213.compute-1.amazonaws.com:8083/actuator
 
-Search-service: http://ec2-3-230-167-213.compute-1.amazonaws.com:8081/swagger-ui/index.html
+Search-service: 
+- http://ec2-3-230-167-213.compute-1.amazonaws.com:8081/swagger-ui/index.html
+- http://ec2-3-230-167-213.compute-1.amazonaws.com:8081/actuator
 
-User-service: http://ec2-3-230-167-213.compute-1.amazonaws.com:8082/swagger-ui/index.html
+User-service: 
+- http://ec2-3-230-167-213.compute-1.amazonaws.com:8082/swagger-ui/index.html
+- http://ec2-3-230-167-213.compute-1.amazonaws.com:8082/actuator
 
 3. Clonar ou baixar o projeto na Azure
 
