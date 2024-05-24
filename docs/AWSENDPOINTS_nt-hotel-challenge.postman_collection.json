@@ -1,0 +1,439 @@
+{
+	"info": {
+		"_postman_id": "7b3c5bfd-278f-4237-a542-a5d298da5b03",
+		"name": "nt-hotel-challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2056573"
+	},
+	"item": [
+		{
+			"name": "hotel",
+			"item": [
+				{
+					"name": "create-hotel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1232132131",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"name\": \"Eiffel Tower\",\n        \"country\": \"France\",\n        \"city\": \"Paris\",\n        \"address\": \"Champ de Mars, 5 Avenue Anatole France, 75007 Paris\",\n        \"rating\": 9.5,\n        \"maxRoom\": 150\n    },\n    {\n        \"name\": \"Colosseum\",\n        \"country\": \"Italy\",\n        \"city\": \"Rome\",\n        \"address\": \"Piazza del Colosseo, 1, 00184 Roma RM\",\n        \"rating\": 9.2,\n        \"maxRoom\": 200\n    },\n    {\n        \"name\": \"Acropolis of Athens\",\n        \"country\": \"Greece\",\n        \"city\": \"Athens\",\n        \"address\": \"Athens 105 58, Greece\",\n        \"rating\": 9.0,\n        \"maxRoom\": 180\n    },\n    {\n        \"name\": \"Brandenburg Gate\",\n        \"country\": \"Germany\",\n        \"city\": \"Berlin\",\n        \"address\": \"Pariser Platz, 10117 Berlin\",\n        \"rating\": 9.3,\n        \"maxRoom\": 120\n    },\n    {\n        \"name\": \"Sagrada Familia\",\n        \"country\": \"Spain\",\n        \"city\": \"Barcelona\",\n        \"address\": \"Carrer de Mallorca, 401, 08013 Barcelona\",\n        \"rating\": 9.6,\n        \"maxRoom\": 250\n    },\n    {\n        \"name\": \"Anne Frank House\",\n        \"country\": \"Netherlands\",\n        \"city\": \"Amsterdam\",\n        \"address\": \"Prinsengracht 263-267, 1016 GV Amsterdam\",\n        \"rating\": 9.4,\n        \"maxRoom\": 100\n    },\n    {\n        \"name\": \"Tower of London\",\n        \"country\": \"United Kingdom\",\n        \"city\": \"London\",\n        \"address\": \"St Katharine's & Wapping, London EC3N 4AB\",\n        \"rating\": 9.1,\n        \"maxRoom\": 170\n    },\n    {\n        \"name\": \"Prague Castle\",\n        \"country\": \"Czech Republic\",\n        \"city\": \"Prague\",\n        \"address\": \"119 08 Prague 1\",\n        \"rating\": 8.9,\n        \"maxRoom\": 190\n    },\n    {\n        \"name\": \"Dubrovnik Old Town\",\n        \"country\": \"Croatia\",\n        \"city\": \"Dubrovnik\",\n        \"address\": \"Old Town, 20000, Dubrovnik, Croatia\",\n        \"rating\": 9.2,\n        \"maxRoom\": 140\n    },\n    {\n        \"name\": \"Neuschwanstein Castle\",\n        \"country\": \"Germany\",\n        \"city\": \"Fussen\",\n        \"address\": \"Neuschwansteinstraße 20, 87645 Schwangau, Germany\",\n        \"rating\": 9.3,\n        \"maxRoom\": 120\n    },\n    {\n        \"name\": \"Buda Castle\",\n        \"country\": \"Hungary\",\n        \"city\": \"Budapest\",\n        \"address\": \"1014 Budapest, Szent György tér 2\",\n        \"rating\": 8.8,\n        \"maxRoom\": 200\n    },\n    {\n        \"name\": \"Edinburgh Castle\",\n        \"country\": \"United Kingdom\",\n        \"city\": \"Edinburgh\",\n        \"address\": \"Castlehill, Edinburgh EH1 2NG, United Kingdom\",\n        \"rating\": 9.0,\n        \"maxRoom\": 150\n    },\n    {\n        \"name\": \"St. Peter's Basilica\",\n        \"country\": \"Vatican City\",\n        \"city\": \"Vatican City\",\n        \"address\": \"Piazza San Pietro, 00120 Città del Vaticano\",\n        \"rating\": 9.7,\n        \"maxRoom\": 210\n    },\n    {\n        \"name\": \"Alhambra\",\n        \"country\": \"Spain\",\n        \"city\": \"Granada\",\n        \"address\": \"Calle Real de la Alhambra, s/n, 18009 Granada\",\n        \"rating\": 9.5,\n        \"maxRoom\": 160\n    },\n    {\n        \"name\": \"Pena Palace\",\n        \"country\": \"Portugal\",\n        \"city\": \"Sintra\",\n        \"address\": \"Estrada da Pena, 2710-609 Sintra, Portugal\",\n        \"rating\": 9.1,\n        \"maxRoom\": 130\n    },\n    {\n        \"name\": \"Blue Lagoon\",\n        \"country\": \"Iceland\",\n        \"city\": \"Grindavik\",\n        \"address\": \"Nordurljosavegur 9, 240 Grindavik, Iceland\",\n        \"rating\": 8.9,\n        \"maxRoom\": 180\n    },\n    {\n        \"name\": \"Charles Bridge\",\n        \"country\": \"Czech Republic\",\n        \"city\": \"Prague\",\n        \"address\": \"Karlův most, 110 00 Praha 1\",\n        \"rating\": 9.0,\n        \"maxRoom\": 170\n    },\n    {\n        \"name\": \"Santorini\",\n        \"country\": \"Greece\",\n        \"city\": \"Santorini\",\n        \"address\": \"Santorini, Greece\",\n        \"rating\": 9.3,\n        \"maxRoom\": 220\n    },\n    {\n        \"name\": \"Giant's Causeway\",\n        \"country\": \"United Kingdom\",\n        \"city\": \"Bushmills\",\n        \"address\": \"44 Causeway Rd, Bushmills BT57 8SU, United Kingdom\",\n        \"rating\": 8.7,\n        \"maxRoom\": 190\n    },\n    {\n        \"name\": \"Zhangjiajie National Forest Park\",\n        \"country\": \"China\",\n        \"city\": \"Zhangjiajie\",\n        \"address\": \"Wulingyuan, Zhangjiajie, Hunan, China\",\n        \"rating\": 8.8,\n        \"maxRoom\": 160\n    },\n    {\n        \"name\": \"Cliffs of Moher\",\n        \"country\": \"Ireland\",\n        \"city\": \"Liscannor\",\n        \"address\": \"Cliffs of Moher, Liscannor, Co. Clare, Ireland\",\n        \"rating\": 8.9,\n        \"maxRoom\": 180\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-3-230-167-213.compute-1.amazonaws.com:8083/hotel/create-hotel",
+							"protocol": "http",
+							"host": [
+								"ec2-3-230-167-213",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "8083",
+							"path": [
+								"hotel",
+								"create-hotel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll-hotel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "123456789",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://ec2-3-230-167-213.compute-1.amazonaws.com:8083/hotel/find-all",
+							"protocol": "http",
+							"host": [
+								"ec2-3-230-167-213",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "8083",
+							"path": [
+								"hotel",
+								"find-all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create-room",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1232132131",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 2,\n        \"price\": 50.10,\n        \"hotelId\": 1\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 3,\n        \"price\": 50.10,\n        \"hotelId\": 10\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 4,\n        \"price\": 50.10,\n        \"hotelId\": 20\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 5,\n        \"price\": 50.10,\n        \"hotelId\": 30\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 6,\n        \"price\": 50.10,\n        \"hotelId\": 40\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 7,\n        \"price\": 50.10,\n        \"hotelId\": 50\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 8,\n        \"price\": 50.10,\n        \"hotelId\": 60\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 2,\n        \"price\": 50.10,\n        \"hotelId\": 1\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 3,\n        \"price\": 50.10,\n        \"hotelId\": 11\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 4,\n        \"price\": 50.10,\n        \"hotelId\": 21\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 5,\n        \"price\": 50.10,\n        \"hotelId\": 31\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 6,\n        \"price\": 50.10,\n        \"hotelId\": 41\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 7,\n        \"price\": 50.10,\n        \"hotelId\": 51\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 8,\n        \"price\": 50.10,\n        \"hotelId\": 61\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 2,\n        \"price\": 50.10,\n        \"hotelId\": 2\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 3,\n        \"price\": 50.10,\n        \"hotelId\": 12\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 4,\n        \"price\": 50.10,\n        \"hotelId\": 22\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 5,\n        \"price\": 50.10,\n        \"hotelId\": 32\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 6,\n        \"price\": 50.10,\n        \"hotelId\": 42\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 7,\n        \"price\": 50.10,\n        \"hotelId\": 52\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 8,\n        \"price\": 50.10,\n        \"hotelId\": 62\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 2,\n        \"price\": 50.10,\n        \"hotelId\": 3\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 3,\n        \"price\": 50.10,\n        \"hotelId\": 13\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 4,\n        \"price\": 50.10,\n        \"hotelId\": 23\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 5,\n        \"price\": 50.10,\n        \"hotelId\": 33\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 6,\n        \"price\": 50.10,\n        \"hotelId\": 43\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 7,\n        \"price\": 50.10,\n        \"hotelId\": 53\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 8,\n        \"price\": 50.10,\n        \"hotelId\": 63\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 2,\n        \"price\": 50.10,\n        \"hotelId\": 4\n    },\n    {\n        \"name\": \"Suite Premium\",\n        \"peopleCapacity\": 3,\n        \"price\": 50.10,\n        \"hotelId\": 14\n    }\n]\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-3-230-167-213.compute-1.amazonaws.com:8083/room/create-room",
+							"protocol": "http",
+							"host": [
+								"ec2-3-230-167-213",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "8083",
+							"path": [
+								"room",
+								"create-room"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAllRooms",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "123456789",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://ec2-3-230-167-213.compute-1.amazonaws.com:8083/room/find-all",
+							"protocol": "http",
+							"host": [
+								"ec2-3-230-167-213",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "8083",
+							"path": [
+								"room",
+								"find-all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "search",
+			"item": [
+				{
+					"name": "find-all-first",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "123456789",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-3-230-167-213.compute-1.amazonaws.com:8081/search/find-all-first-page",
+							"protocol": "http",
+							"host": [
+								"ec2-3-230-167-213",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "8081",
+							"path": [
+								"search",
+								"find-all-first-page"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find-all-filtering",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "123456789",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"country\": \"brasil\",\n    \"priceStart\": 20,\n    \"priceEnd\": 60\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-3-230-167-213.compute-1.amazonaws.com:8081/search/find-all",
+							"protocol": "http",
+							"host": [
+								"ec2-3-230-167-213",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "8081",
+							"path": [
+								"search",
+								"find-all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "compareroom",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1232132131",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"room1\": 1, \"room2\": 2}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-3-230-167-213.compute-1.amazonaws.com:8081/search/compare-room?room1=1&room2=2",
+							"protocol": "http",
+							"host": [
+								"ec2-3-230-167-213",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "8081",
+							"path": [
+								"search",
+								"compare-room"
+							],
+							"query": [
+								{
+									"key": "room1",
+									"value": "1"
+								},
+								{
+									"key": "room2",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "create-user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "123456789",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"pedro\",\n    \"lastName\": \"Francisco\",\n    \"phone\": \"21999542266\",\n    \"email\": \"joao@test.com.br\",\n    \"wallet\": {\n        \"name\": \"cartao principal\",\n        \"type\": \"CREDITO\",\n        \"code\": \"1234\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-3-230-167-213.compute-1.amazonaws.com:8082/user/save",
+							"protocol": "http",
+							"host": [
+								"ec2-3-230-167-213",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "8082",
+							"path": [
+								"user",
+								"save"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "booking",
+			"item": [
+				{
+					"name": "createbook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "123456789",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idRoom\": 2,\n    \"idUser\": 5,\n    \"name\": \"ferias\",\n    \"startAt\": \"2024-05-10 00:00\",\n    \"endAt\": \"2024-05-11 12:00\",\n    \"countPeople\": 4\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-3-230-167-213.compute-1.amazonaws.com:8082/booking/save",
+							"protocol": "http",
+							"host": [
+								"ec2-3-230-167-213",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "8082",
+							"path": [
+								"booking",
+								"save"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

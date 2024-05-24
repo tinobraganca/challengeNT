@@ -4,7 +4,9 @@
 
 ## Notes
 1. As imagens referentes a arquitetura estão na pasta docs/.
-2. Vou estar anexando export do postman para realizar testes das chamadas.
+2. Vou estar anexando export do postman para realizar testes das chamadas na pasta docs/
+3. O repositorio está com tamanho alto porque por falta de tempo publiquei os .jar para conseguir fazer script 
+mais rapido rodar na aws Obs:(jamais faria isso em um situação normal)
 
 ## Resumo de arquitetura
 O projeto se baseia em uma arquitetura de 3 microservices para conseguir se escalado horizontalmente:
