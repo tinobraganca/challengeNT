@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS "NT_HOTEL_DB"."ROOM"
+(
+    "ID_ROOM"         serial NOT NULL,
+    "ID_HOTEL"        bigint NOT NULL,
+    "NAME"            varchar(50) NOT NULL,
+    "PEOPLE_CAPACITY" int NOT NULL,
+    "PRICE"           int NOT NULL,
+    "CREATED_AT"      timestamp NOT NULL,
+    "UPDATED_AT"      timestamp NULL,
+    CONSTRAINT "PK_ROOM_1" PRIMARY KEY ( "ID_ROOM" ),
+    CONSTRAINT "FK_HOTEL_1" FOREIGN KEY("ID_HOTEL")  REFERENCES "NT_HOTEL_DB"."HOTEL_COMPANY"("ID_HOTEL")
+);
+
+CREATE INDEX "IDX_ROOM_01" ON "NT_HOTEL_DB"."ROOM"
+(
+    "ID_ROOM"
+);
+
+
+
+

@@ -1,0 +1,26 @@
+CREATE TABLE IF NOT EXISTS "NT_HOTEL_DB"."HOTEL_COMPANY"
+(
+    "ID_HOTEL" serial NOT NULL,
+    "MAX_ROOM" numeric NOT NULL,
+    "NAME"     varchar(150) NOT NULL,
+    "COUNTRY"  varchar(100) NOT NULL,
+    "CITY"     varchar(100) NOT NULL,
+    "ADDRESS"  varchar(255) NOT NULL,
+    "RATING"  numeric,
+    "CREATED_AT"      timestamp NOT NULL,
+    "UPDATED_AT"      timestamp NULL,
+    CONSTRAINT "PK_HOTEL_1" PRIMARY KEY ( "ID_HOTEL" )
+);
+
+CREATE INDEX "IDX_HOTEL_COUNTRY_1" ON "NT_HOTEL_DB"."HOTEL_COMPANY"
+(
+    "ID_HOTEL"
+);
+CREATE INDEX "IDX_HOTEL_COUNTRY_2" ON "NT_HOTEL_DB"."HOTEL_COMPANY"
+(
+    "COUNTRY"
+);
+
+
+
+
