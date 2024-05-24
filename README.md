@@ -65,11 +65,13 @@ Obs: Local a publicação das mensagem no SQS não está acontecendo porque cred
     
 Projeto está rodando na AWS
 
-Hotel-service: 
+Grafana: http://ec2-3-230-167-213.compute-1.amazonaws.com:3000 login/senha=admin 
 
-Search-service:
+Hotel-service: http://ec2-3-230-167-213.compute-1.amazonaws.com:8083/swagger-ui/index.html
 
-User-service:
+Search-service: http://ec2-3-230-167-213.compute-1.amazonaws.com:8081/swagger-ui/index.html
+
+User-service: http://ec2-3-230-167-213.compute-1.amazonaws.com:8082/swagger-ui/index.html
 
 3. Clonar ou baixar o projeto na Azure
 
